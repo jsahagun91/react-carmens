@@ -1,0 +1,81 @@
+.menu-h2 {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-h2:hover {
+    color: yellow;
+}
+
+.accordion-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion {
+    background-color: red;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 500px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  
+  /* .accordion:hover{
+    background-color: red;
+  } */
+  
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .description {
+    padding: 15px;
+    background-color: #ffffff; /* Example background color */
+    border: 1px solid #eee; /* Slightly lighter border for the description */
+    border-top: none; /* Remove top border to blend with the header */
+  }
+  
+  /* This style is not necessary if you're using React state to control the display, 
+     but it's here if you need to apply additional styles when the panel is visible. */
+  .accordion-item .active .panel {
+    display: block; /* Or use a transition with max-height if preferred */
+  }
+  
+  .title, .price {
+    flex-basis: 50%;
+  }
+  
+  .price {
+    text-align: right;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .accordion {
+      width: 80%;
+    }
+}
