@@ -9,8 +9,6 @@ import {
   HeroBtn,
 } from "./HeroElements";
 // import Sidebar from '../Sidebar';
-import novatoMenu from '../../images/2024-novato.pdf'
-import fairfaxMenu from '../../images/2024-fairfax.pdf'
 import rpMenu from '../../images/2024-rp.pdf'
 
 const Hero = () => {
@@ -27,10 +25,10 @@ const Hero = () => {
         <HeroItems>
           <HeroH1>Carmen's La Hacienda</HeroH1>
           <HeroP>Authentic Mexican Food</HeroP>
-          <a href={novatoMenu}>
+          <a href='https://novato.carmenslahacienda.com/'>
             <HeroBtn>Novato</HeroBtn>
           </a>
-          <a href={fairfaxMenu}>
+          <a href='https://fairfax.carmenslahacienda.com/'>
             <HeroBtn>Fairfax</HeroBtn>
           </a>
           <a href={rpMenu}>
