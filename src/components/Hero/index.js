@@ -9,7 +9,6 @@ import {
   HeroBtn,
 } from "./HeroElements";
 // import Sidebar from '../Sidebar';
-import rpMenu from '../../images/2024-rp.pdf'
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +30,7 @@ const Hero = () => {
           <a href='https://fairfax.carmenslahacienda.com/'>
             <HeroBtn>Fairfax</HeroBtn>
           </a>
-          <a href={rpMenu}>
+          <a href='https://rohnertpark.carmenslahacienda.com'>
             <HeroBtn>Rohnert Park</HeroBtn>
           </a>
         </HeroItems>
