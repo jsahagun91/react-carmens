@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/taco-3.jpg'
+import ImgBg from '../../images/heroBanner.jpeg'
 
 export const HeroContainer = styled.div`
     background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url(${ImgBg});
@@ -60,6 +60,7 @@ export const HeroBtn = styled.button`
     width: 200px;
     height: 50px;
     margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     &:hover {
         background: #fcebd1;

@@ -1,15 +1,16 @@
 import React from "react";
-import { Bars, Nav, NavIcon, NavLink } from "./NavbarElements";
+import { Nav, NavLink } from "./NavbarElements";
+import logo from '../../images/carmens-logo.png'
 
 const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
-                <NavLink to='/'>Carmen's</NavLink>
-                <NavIcon onClick={ toggle }>
+                <NavLink to='/'><img src={logo} alt="Logo" style={{ height: '50px', boxShadow:'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}/></NavLink>
+                {/* <NavIcon onClick={ toggle }>
                     <p>Menu</p>
                     <Bars />
-                </NavIcon>
+                </NavIcon> */}
             </Nav>
         </>
     )
