@@ -8,47 +8,49 @@ import {
   HeroP,
   HeroBtn,
 } from "./HeroElements";
-// import Sidebar from '../Sidebar';
 
 const Hero = () => {
   return (
-    <HeroContainer role="region" aria-label="Hero section">
+    <HeroContainer role="region" aria-label="Hero section: location selector">
       <Navbar />
-      {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
+
       <HeroContent>
         <HeroItems>
           <HeroH1>Carmen's La Hacienda</HeroH1>
           <HeroP>Authentic Mexican Food</HeroP>
 
-          {/* Accessible Buttons Styled as Links */}
+          {/* Location links styled as buttons */}
           <p>
             <a
               href="https://novato.carmenslahacienda.com/"
               role="button"
+              aria-label="Visit Carmen's La Hacienda Novato location"
               className="location-link"
               style={{ textDecoration: 'none' }}
             >
-              <HeroBtn aria-label="Visit Carmen's La Hacienda Novato location">Novato</HeroBtn>
+              <HeroBtn tabIndex="0">Novato</HeroBtn>
             </a>
           </p>
           <p>
             <a
               href="https://fairfax.carmenslahacienda.com/"
               role="button"
+              aria-label="Visit Carmen's La Hacienda Fairfax location"
               className="location-link"
               style={{ textDecoration: 'none' }}
             >
-              <HeroBtn aria-label="Visit Carmen's La Hacienda Fairfax location">Fairfax</HeroBtn>
+              <HeroBtn tabIndex="0">Fairfax</HeroBtn>
             </a>
           </p>
           <p>
             <a
               href="https://rohnertpark.carmenslahacienda.com/"
               role="button"
+              aria-label="Visit Carmen's La Hacienda Rohnert Park location"
               className="location-link"
               style={{ textDecoration: 'none' }}
             >
-              <HeroBtn aria-label="Visit Carmen's La Hacienda Rohnert Park location">Rohnert Park</HeroBtn>
+              <HeroBtn tabIndex="0">Rohnert Park</HeroBtn>
             </a>
           </p>
         </HeroItems>

@@ -1,37 +1,44 @@
 import React from "react";
 import { Nav, NavLink } from "./NavbarElements";
 import logo from '../../images/carmens-logo.png';
-// import { Bars } from 'some-icon-library'; // Add this if you use Bars icon
 
 const Navbar = ({ toggle }) => {
-    return (
-        <nav aria-label="Main Navigation">
-            <Nav>
-                <NavLink to='/'>
-                    <img
-                        src={logo}
-                        alt="Carmen’s Restaurant logo"
-                        style={{ height: '50px' }}
-                    />
-                </NavLink>
+  return (
+    <nav aria-label="Main Navigation">
+      <Nav>
 
-                {/* Mobile menu toggle button (if used) */}
-                {/* <button
-                    onClick={toggle}
-                    aria-label="Toggle menu"
-                    style={{
-                        background: 'none',
-                        border: 'none',
-                        cursor: 'pointer',
-                        padding: '8px'
-                    }}
-                >
-                    <p style={{ margin: 0 }}>Menu</p>
-                    <Bars />
-                </button> */}
-            </Nav>
-        </nav>
-    );
+        {/* Logo with descriptive alt text */}
+        <NavLink to='/'>
+          <img
+            src={logo}
+            alt="Carmen’s La Hacienda restaurant logo"
+            style={{ height: '50px' }}
+          />
+        </NavLink>
+
+        {/* Optional: Menu toggle button for mobile (accessible version) */}
+        {/* Uncomment and style as needed */}
+        {/*
+        <button
+          onClick={toggle}
+          aria-label="Toggle navigation menu"
+          style={{
+            background: 'none',
+            border: '2px solid transparent',
+            cursor: 'pointer',
+            padding: '10px',
+            outline: 'none'
+          }}
+          onFocus={(e) => e.target.style.border = '2px solid #FFD700'}
+          onBlur={(e) => e.target.style.border = '2px solid transparent'}
+        >
+          <span>☰ Menu</span>
+        </button>
+        */}
+
+      </Nav>
+    </nav>
+  );
 };
 
 export default Navbar;
